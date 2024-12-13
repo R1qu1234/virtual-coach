@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Coach By English Eagles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            background-color: #003f80;
+            border-radius: 5px;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-image: url('https://via.placeholder.com/1920x600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+        .feature {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .feature h2 {
+            color: #0073e6;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #005bb5;
+            color: white;
+            margin-top: 2rem;
+        }
+        section {
+            padding: 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        form label {
+            margin-top: 1rem;
+        }
+        form input, form textarea, form button {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #005bb5;
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+        }
+        .exercise {
+            margin-bottom: 2rem;
+        }
+        .exercise img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Virtual Coach</h1>
+    </header>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#login">Login</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#plans">Plans</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to Virtual Coach</h1>
+        <p>Your personalized fitness and health journey starts here!</p>
+        <button style="padding: 1rem 2rem; font-size: 1rem; border: none; background-color: #0073e6; color: white; border-radius: 5px; cursor: pointer;">Get Started</button>
+    </div>
+    <section class="features" id="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/300x200" alt="Custom Plans">
+            <h2>Custom Plans</h2>
+            <p>Receive workout and nutrition plans tailored to your goals.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300x200" alt="Track Progress">
+            <h2>Track Progress</h2>
+            <p>Monitor your fitness journey with detailed analytics.</p>
+        </div>
+        <div class="feature">
+            <img src="https://images.unsplash.com/photo-1571019613910-1c9c7c1749bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Expert Guidance">
+            <h2>Expert Guidance</h2>
+            <div class="exercise">
+                <h3>Push-Up</h3>
+                <img src="https://c.tenor.com/gI-8qCUEko8AAAAd/tenor.gif" alt="Push-Up Exercise">
+                <p>A classic exercise for building upper body strength.</p>
+            </div>
+            <div class="exercise">
+                <h3>Plank</h3>
+                <img src="https://media.giphy.com/media/l0MYB8Ory7Hqefo9a/giphy.gif" alt="Plank Exercise">
+                <p>Perfect for core strength and stability.</p>
+            </div>
+            <div class="exercise">
+                <h3>Jumping Jacks</h3>
+                <img src="https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif" alt="Jumping Jacks">
+                <p>A full-body workout to get your heart rate up.</p>
+            </div>
+        </div>
+    </section>
+    <section id="login">
+        <h2>Login or Sign Up</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#signup">Sign up here</a></p>
+        </form>
+    </section>
+    <section id="about">
+        <h2>About Virtual Coach</h2>
+        <p>Virtual Coach is your all-in-one fitness companion. We provide personalized training plans, progress tracking, and expert advice to help you achieve your fitness goals.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section id="plans">
+        <h2>Training Plans</h2>
+        <ul>
+            <li><strong>Beginner:</strong> A 4-week program to kickstart your fitness journey.</li>
+            <li><strong>Intermediate:</strong> A 6-week program for building strength and stamina.</li>
+            <li><strong>Advanced:</strong> An 8-week program for athletes looking to push their limits.</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 OFFSIDES. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
